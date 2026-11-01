@@ -1,0 +1,10 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+numpy==1.26.4
+fastembed==0.3.4
+llama-cpp-python==0.2.90
+python-dotenv==1.0.1
+pyngrok==7.2.1
+nest-asyncio==1.6.0
+requests==2.32.3

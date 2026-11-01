@@ -1,0 +1,32 @@
+[
+  {
+    "id": "KB-001",
+    "topic": "VPN Corporativa y Acceso Remoto",
+    "text": "Para ingresar a la red remota corporativa es necesario tener instalado el cliente WireGuard o OpenVPN. Descarga el perfil de conexión '.ovpn' desde https://portal.ti.local. Al conectar, ingresa tu usuario de Directorio Activo y en el campo de contraseña coloca tu clave corporativa habitual concatenada inmediatamente con el token MFA de 6 dígitos (sin espacios ni guiones). Si el enlace falla tras 3 intentos, espera 10 minutos por bloqueo temporal de seguridad."
+  },
+  {
+    "id": "KB-002",
+    "topic": "Restablecimiento de Contraseñas y Desbloqueo de Cuenta",
+    "text": "El restablecimiento de contraseña de dominio y correo se efectúa ingresando a https://sso.empresa.local/recovery. Ingresa tu correo institucional y confirma el código OTP que se enviará vía SMS al celular registrado en Talento Humano. La contraseña nueva debe tener un mínimo de 12 caracteres, incluir mayúsculas, minúsculas, números y al menos un símbolo especial. El enlace temporal expira en 15 minutos."
+  },
+  {
+    "id": "KB-003",
+    "topic": "Solicitud y Asignación de Licencias de Software",
+    "text": "Las licencias de software (como Office 365 E5, JetBrains, Figma o Adobe Creative Cloud) deben gestionarse mediante el formulario interno TI-802 disponible en la intranet. Es obligatorio adjuntar la aprobación formal del líder de área o director de departamento. El tiempo estándar de resolución y activación técnica es de 24 a 48 horas hábiles tras la validación presupuestal."
+  },
+  {
+    "id": "KB-004",
+    "topic": "Problemas de Impresión y Cola de Impresión Local",
+    "text": "Si la impresora compartida de red no responde o el documento se queda atascado en estado 'Imprimiendo', abre la consola de comandos (cmd) con privilegios de Administrador y ejecuta: 'net stop spooler && net start spooler' para reiniciar el servicio Spooler local. Si el error persiste, comprueba que la dirección IP de la impresora sea alcanzable mediante 'ping 192.168.10.50' y vacía manualmente la carpeta 'C:\\Windows\\System32\\spool\\PRINTERS'."
+  },
+  {
+    "id": "KB-005",
+    "topic": "Fallo en Correo Electrónico y Sincronización Outlook",
+    "text": "Si Microsoft Outlook no recibe correos nuevos o muestra el estado 'Desconectado', verifica primero el acceso a la versión web en https://outlook.office.com. Si la versión web funciona, abre Outlook en modo seguro presionando Windows + R y ejecutando 'outlook.exe /safe'. Si persiste el fallo, ve a Archivo > Configuración de la cuenta > Reparar cuenta, o borra las credenciales guardadas en el Administrador de Credenciales de Windows bajo 'MSOffice/ADAL'."
+  },
+  {
+    "id": "KB-006",
+    "topic": "Pantallas Azules (BSOD) y Fallos Críticos de Hardware",
+    "text": "Incidentes con olor a quemado, ruidos anómalos continuos de ventiladores/discos o reinicios constantes por Pantalla Azul (BSOD) corresponden a fallas físicas de hardware. No intentes abrir los equipos. Apaga el dispositivo desconectando la fuente de poder de inmediato y reporta el número de serie (Service Tag) al equipo de soporte de campo para sustitución física o intervención presencial urgente."
+  }
+]
